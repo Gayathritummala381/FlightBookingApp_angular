@@ -1,0 +1,42 @@
+<div class="header-top">
+    <div class="container">
+        <p>
+            <span class="login" data-toggle="modal" data-target="#Login"> Login</span>
+            <span class="login" data-toggle="modal" data-target="#Signup"> Sign Up</span>
+        </p>
+    </div>
+    <div class="menu">
+        <div>
+            <span class="logo">
+                <img src="/../../assets/images/logo.png" alt="missing">
+            </span>
+            <span class="logo" *ngIf="router.url != '/booking'">
+                <ul id="menu">
+                    <li><a href="/booking" role="button">Home</a></li>
+
+
+                </ul>
+            </span>
+        </div>
+
+    </div>
+
+</div>
+<div class="modal" role="dialog" id="Login">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h1 style="text-align: center;">Login Form</h1>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Okay</a>
+            </div>
+        </div>
+    </div>
+</div>

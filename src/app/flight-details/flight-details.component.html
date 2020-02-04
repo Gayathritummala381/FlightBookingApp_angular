@@ -1,0 +1,44 @@
+<h1>{{leavingFrom}} - {{goingTo}} on {{departDate | date:'longDate'}}</h1>
+
+
+
+
+<div id="bio">
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>
+          <h1>Bus Name</h1>
+        </th>
+        <th>
+          <h1>Dept. Time</h1>
+        </th>
+        <th>
+          <h1>Coach Type</h1>
+        </th>
+        <th>
+          <h1>Seats Available</h1>
+        </th>
+        <th>
+          <h1>Fare</h1>
+        </th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let f of flightData">
+        <td class="bar"> {{f.name | uppercase}}</td>
+
+        <td class="bar">{{f.departure}}</td>
+        <td class="bar">{{f.classtype}}</td>
+        <td class="bar">{{f.seatsavailable}}</td>
+        <td class="bar">{{f.price}}</td>
+
+        <td><button (click)="bookTicket()">Book Ticket</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,13 @@
+form{
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-top: 15vh;
+    transform: translate(-50%);
+}
+
+.btn{
+    margin-right: 20px;
+    background:  rgb(255, 34, 108);
+    border-color: darkgray;
+}

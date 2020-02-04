@@ -1,0 +1,39 @@
+<app-header></app-header>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">User Name</label>
+    <input class="form-control" type="text" placeholder="User name">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Enter email" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Phone Number</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Phone number" required></div>
+  <button type="submit" class="btn btn-primary" (click)="goBack()">GoBack</button>
+
+  <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Submit</button>
+</form>
+
+<div class="modal" role="dialog" id="exampleModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1 style="text-align: center;">Booking Confirmed</h1>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Okay</a>
+      </div>
+    </div>
+  </div>
+</div>

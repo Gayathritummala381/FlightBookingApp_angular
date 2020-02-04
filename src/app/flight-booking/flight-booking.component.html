@@ -1,0 +1,56 @@
+<app-header></app-header>
+<form>
+    <label for="">
+        <h4>Leaving From</h4>
+    </label><br>
+    <select name="cities" id="select" [(ngModel)]="leavingFrom" [ngModelOptions]="{standalone: true}">
+
+        <option value="Bangalore">Bangalore</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Hyderabad">Hyderabad</option>
+    </select><br><br>
+
+    <label for="">
+        <h4>Going To</h4>
+    </label><br>
+    <select name="cities2" id="select" [(ngModel)]="goingTo">
+
+        <option value="Bangalore">Bangalore</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Hyderabad">Hyderabad</option>
+    </select><br><br>
+
+
+
+    <table>
+        <tr>
+            <td>
+                <h3>Departing</h3><br>
+            </td>
+            <td>
+                <h3>Returning</h3><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" name="depart" id="" [(ngModel)]="departDate">
+            </td>
+            <td>
+                <input type="date" name="return" id="returnDate" [(ngModel)]="returnDate">
+            </td>
+        </tr>
+    </table><br>
+    <input type="button" value="Search Flights" (click)="processData()">
+
+</form>
+
+<!-- <div class="footer ">
+
+                      
+        <img src="../assets/images/payments.png"  alt="">
+        
+      </div> -->
